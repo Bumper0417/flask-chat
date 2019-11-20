@@ -34,4 +34,4 @@ def send_message(username, message):
     return redirect("/" + username)
 
 
-app.run(host=os.getenv("IP"), port=(os.getenv("PORT")), debug=True)
+app.run(host='0.0.0.0', port=(os.getenv("PORT")), debug=True)
